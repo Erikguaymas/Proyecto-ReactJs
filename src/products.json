@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Pinza alicate",
+      " description": "herramienta multiusos y sirve para apretar y aflojar, estirar y doblegar piezas, cortar un alambre o pelar un cable",
+      "price": 3000,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1694994661/PreEntrega/alicate_vj6zeo.webp",
+      "stock": 10,
+      "category": "herramienta"
+    },
+
+    {
+      "id": 2,
+      "title": "Tuercas Hexagonales X 100 Unidades",
+      "description": "pieza mecánica para acoplar a un tornillo, en forma fija o deslizante fijando uniones de elementos desmontables",
+      "price": 1300,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145117/PreEntrega/D_NQ_NP_747013-MLA45714261013_042021-O_yns5p4.webp",
+      "stock": 15,
+      "category": "tornilleria"
+    },
+    {
+      "id": 3,
+      "title": "Juego De Soplete Para Chapista",
+      "description": "instrumento para unir, cortar y calentar distintas piezas metálicas",
+      "price": 43000,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145956/PreEntrega/D_NQ_NP_855557-MLA41739224933_052020-O_uok2ip.webp",
+      "stock": 4,
+      "category": "soldadura"
+    },
+
+    {
+      "id": 4,
+      "title": "Electrodo Para Soldadura ",
+      "description": "varilla metálica especialmente preparada para servir como material de aporte en los procesos de soldadura por arco",
+      "price": 3800,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145175/PreEntrega/D_NQ_NP_751044-MLA44411459417_122020-O_ffn19s.webp",
+      "stock": 13,
+      "category": "soldadura"
+    },
+    {
+      "id": 5,
+      "title": "Destornillador plano",
+      "description": "herramienta que se utiliza para apretar y aflojar tornillos",
+      "price": 1500,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1694994711/PreEntrega/destornillador_mojmyd.webp",
+      "stock": 25,
+      "category": "herramienta"
+    },
+    {
+      "id": 6,
+      "title": "Tornillos Philips M4 X 25mm X 50 Unidades ",
+      "description": "elemento de unión para unir dos piezas al introducirse en un agujero roscado",
+      "price": 1900,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145154/PreEntrega/D_NQ_NP_991940-MLA32693036897_102019-O_a5nohj.webp",
+      "stock": 20,
+      "category": "tornilleria"
+    },
+    {
+      "id": 7,
+      "title": "Cinta métrica",
+      "description": " herramienta flexible que se usa para medir longitudes y distancias",
+      "price": 7000,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1694994681/PreEntrega/cintaMetrica_ldx2jx.webp",
+      "stock": 12,
+      "category": "herramienta"
+    },
+    {
+      "id": 8,
+      "title": "Arandela Plana X 100 Unidades",
+      "description": "pieza de montaje para mantener apretados una tuerca o un tornillo, asegurar el cierre hermético de una junta o evitar el roce entre dos piezas.",
+      "price": 1200,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145033/PreEntrega/D_NQ_NP_906464-MLA45714237958_042021-O_owqoic.webp",
+      "stock": 18,
+      "category": "tornilleria"
+    },
+    {
+      "id": 9,
+      "title": "Máscara Para Soldar",
+      "description": "equipo de protección que se utiliza cuando se realizan en la soldadura para proteger los ojos, la cara y el cuello del soldador, la luz ultravioleta, las chispas, la luz infrarroja, y el calor",
+      "price": 5500,
+      "pictureUrl": "https://res.cloudinary.com/dzb9mrgom/image/upload/v1695145240/PreEntrega/D_NQ_NP_870700-MLA50693923195_072022-O_s36jfj.webp",
+      "stock": 7,
+      "category": "soldadura"
+    }
+  ]
+}
