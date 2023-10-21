@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Badge } from "react-bootstrap";
 import { BsCart4 } from "react-icons/Bs";
+import { CartContext } from "../context/CartContext";
 
 const CartWidget = () => {
+  const { getTotalItems } = useContext(CartContext);
+  const totalItems = getTotalItems();
   return (
     <div className="position-relative">
       <BsCart4 />
@@ -9,7 +13,7 @@ const CartWidget = () => {
         className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
         bg="secondary"
       >
-        0
+        {totalItems}
       </Badge>
     </div>
   );

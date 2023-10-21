@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -6,23 +5,28 @@ const Item = ({ product }) => {
   return (
     <Card
       style={{
-        width: "8rem",
-        height: "320px",
-        display: "flex",
+        width: "18rem",
       }}
     >
       <Card.Img
         variant="top"
         src={product.pictureUrl}
-        style={{ height: "128px" }}
+        style={{ height: "300px" }}
       />
-      <Card.Body>
-        <Card.Title className="text-center" style={{ fontSize: "1rem" }}>
-          {product.title}
-        </Card.Title>
-        <Card.Text className="text-center">${product.price}</Card.Text>
+      <Card.Body
+        className="text-center"
+        style={{
+          backgroundColor: "lightcoral",
+          height: "115px",
+        }}
+      >
+        <Card.Title style={{ fontSize: "1rem" }}>{product.title}</Card.Title>
+        <Card.Text style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+          ${product.price}
+        </Card.Text>
       </Card.Body>
-      <Card.Body style={{ margin: "auto", display: "flex", alignItems: "end" }}>
+      <div className="text-center p-2">
+        {" "}
         <Button
           as={Link}
           to={`/item/${product.id}`}
@@ -31,7 +35,7 @@ const Item = ({ product }) => {
         >
           Ver detalles
         </Button>
-      </Card.Body>
+      </div>
     </Card>
   );
 };

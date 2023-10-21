@@ -7,8 +7,8 @@ const ItemList = ({ productos }) => {
       {productos.map((product) => {
         return (
           <Col
-            key={product.id}
             style={{ display: "flex", justifyContent: "center" }}
+            key={product.id}
           >
             <Item product={product} />
           </Col>

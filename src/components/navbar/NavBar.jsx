@@ -1,34 +1,32 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import CartWidget from "../cart/CartWidget";
 import { Link, Outlet } from "react-router-dom";
+import { menuNavigate } from "./menuNavigate";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar style={{ backgroundColor: "lightgray" }} data-bs-theme="light">
-        <Container>
+      <Navbar
+        className="sticky-top"
+        style={{ backgroundColor: "lightgray" }}
+        data-bs-theme="light"
+      >
+        <Container className="justify-content-between">
           <Navbar.Brand as={Link} to="/">
             ferrErik
           </Navbar.Brand>
           <Nav>
-            <Nav.Link as={Link} to="/">
-              Inicio
-            </Nav.Link>
-            <Nav.Link as={Link} to="/category/herramienta">
-              Herramientas
-            </Nav.Link>
-            <Nav.Link as={Link} to="/category/soldadura">
-              Soldadura
-            </Nav.Link>
-            <Nav.Link as={Link} to="/category/tornilleria">
-              Tornilleria
-            </Nav.Link>
+            {menuNavigate.map(({ id, path, title }) => (
+              <Nav.Link key={id} as={Link} to={path}>
+                {title}
+              </Nav.Link>
+            ))}
           </Nav>
-          <Navbar.Collapse className="justify-content-end">
+          <Nav>
             <Nav.Link as={Link} to={"/carrito"}>
               <CartWidget />
             </Nav.Link>
-          </Navbar.Collapse>
+          </Nav>
         </Container>
       </Navbar>
       <Outlet />
@@ -37,10 +35,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-{
-  /*     <Link to="/">Inicio</Link>
-            <Link to="/category/herramienta">Herramientas</Link>
-            <Link to="/category/soldadura">Soldadura</Link>
-            <Link to="/category/tornilleria">Tornilleria</Link> */
-}
